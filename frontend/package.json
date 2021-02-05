@@ -7,9 +7,7 @@
     "dev": "next -p 7777",
     "build": "next build",
     "start": "next start -p 7777",
-    "test": "NODE_ENV=test jest --watch",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "test": "NODE_ENV=test jest --watch"
   },
   "author": "",
   "license": "ISC",
@@ -23,10 +21,10 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-plugin-styled-components": "^1.12.0",
     "date-fns": "^2.16.1",
+    "graphql-upload": "^11.0.0",
     "downshift": "^6.0.6",
     "graphql": "^15.4.0",
     "graphql-tag": "^2.11.0",
-    "graphql-upload": "^11.0.0",
     "lodash.debounce": "^4.0.8",
     "next": "^10.0.3",
     "next-with-apollo": "^5.1.0",
@@ -65,19 +63,7 @@
   "eslintConfig": {
     "extends": [
       "wesbos"
-    ],
-    "rules": {
-      "no-console": 2,
-      "prettier/prettier": [
-        "error",
-        {
-          "trailingComma": "es5",
-          "singleQuote": true,
-          "printWidth": 120,
-          "tabWidth": 8,
-        }
-      ]
-    }
+    ]
   },
   "jest": {
     "setupFilesAfterEnv": [
