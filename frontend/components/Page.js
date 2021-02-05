@@ -1,7 +1,7 @@
 export default function Page() {
         return (
                 <div>
-                        <p>I am a component</p>
+                        <p>I am a component aren't I?</p>
                 </div>
         );
 }
