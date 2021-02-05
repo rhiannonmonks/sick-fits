@@ -1,7 +1,7 @@
 export default function Page() {
         return (
-                <Page>
+                <div>
                         <p>I am a component</p>
-                </Page>
+                </div>
         );
 }
