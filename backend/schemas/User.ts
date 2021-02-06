@@ -7,7 +7,7 @@ export const User = list({
         fields: {
                 name: text({ isRequired: true }),
                 email: text({ isRequired: true, isUnique: true }),
-                passwod: password(),
+                password: password(),
                 // TODO add roles, cart and orders
         },
 });
