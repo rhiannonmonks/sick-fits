@@ -2,6 +2,7 @@ import 'dotenv/config';
 import { createAuth } from '@keystone-next/auth';
 import { config, createSchema } from '@keystone-next/keystone/schema';
 import { withItemData, statelessSessions } from '@keystone-next/keystone/session';
+import { permissionsList } from './schemas/fields';
 import { User } from './schemas/User';
 import { Product } from './schemas/Product';
 import { CartItem } from './schemas/CartItem';
@@ -73,7 +74,7 @@ export default withAuth(
                                 !!session?.data,
                 },
                 session: withItemData(statelessSessions(sessionConfig), {
-                        User: `id`,
+                        User: `id name email role { ${permissionsList.join(' ')} }`,
                 }),
         })
 );

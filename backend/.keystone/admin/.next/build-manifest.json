@@ -14,11 +14,6 @@
     "static/development/_ssgManifest.js"
   ],
   "pages": {
-    "/": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/index.js"
-    ],
     "/_app": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
@@ -29,25 +24,15 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/roles": [
+    "/next/dist/pages/_error": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/roles.js"
+      "static/chunks/pages/next/dist/pages/_error.js"
     ],
     "/roles/[id]": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/roles/[id].js"
-    ],
-    "/users": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/users.js"
-    ],
-    "/users/[id]": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/users/[id].js"
     ]
   },
   "ampFirstPages": []
